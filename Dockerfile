@@ -7,7 +7,8 @@ RUN apk add --no-cache unzip
 WORKDIR /pb
 
 # Copy PocketBase binary into container
-COPY pocketbase.exe /pb/pocketbase
+COPY pocketbase /pb/pocketbase
+
 
 # Make it executable
 RUN chmod +x /pb/pocketbase
